@@ -1,3 +1,9 @@
+//Consider the following series:
+//0,0,2,1,4,2,6,3,8,4,10,5,12,6,14,7,16,8,...
+//The series is a mixture of 2 Geometric progression:
+//1] All odd term are 2 times bigger than the previous term at the odd position.
+//2] All even terms are dividend we get after dividing odd terms with 2.
+//WAP to print the nth term in the series.
 #include<stdio.h>
 int main()
 {
