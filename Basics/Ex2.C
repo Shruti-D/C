@@ -4,7 +4,7 @@
 int main()
 {
     int num;
-    printf("Enter a Number:\n");
+    printf("Enter a Number:");
     scanf("%d",&num);
     
      //Checking if the number is divisible by 2 
