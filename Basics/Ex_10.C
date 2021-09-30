@@ -11,4 +11,5 @@ int main(){
         n /= 10;
     }
     printf("The sum of digits in number %d is %d",temp,sum);
+    return 0;
 }
