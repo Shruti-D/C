@@ -14,7 +14,7 @@ int main(){
     int start,end,i;
     printf("Enter Start and End of the range:\n");
     scanf("%d\n%d",&start,&end);
-    if(start<=1 || end<=1)
+    if(start<1 || end<=1)
       printf("No Prime Numbers.");
     else{
         printf("Prime Numbers from %d to %d:\n",start,end);
