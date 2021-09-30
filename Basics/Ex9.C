@@ -14,9 +14,14 @@ int main(){
     int start,end,i;
     printf("Enter Start and End of the range:\n");
     scanf("%d\n%d",&start,&end);
-    printf("Prime Numbers from %d to %d:\n",start,end);
-    for(i=start;i<=end;i++){
-        isPrime(i);
+    if(start<=1 || end<=1)
+      printf("No Prime Numbers.");
+    else{
+        printf("Prime Numbers from %d to %d:\n",start,end);
+        for(i=start;i<=end;i++){
+            if(i>1)
+              isPrime(i);
+        }
     }
-    
+    return 0;
 }
