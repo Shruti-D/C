@@ -1,16 +1,23 @@
-/*C program to convert temperature in fahrenheit to centigrade*/
+/*C program to calculate aggregate marks and precentage marks.*/
 #include<stdio.h>
 
 int main(){
-    float fr, cent;
+    int m1,m2,m3,m4,m5,agg;
+    float percent;
     
-    /*Taking temperature from user in fahrenheit*/
-    printf("Enter temperature in fahrenheit:");
-    scanf("%f", &fr);
+    /*Taking marks of the Student from user*/
+    printf("Enter marks in 5 subjects \n");
+    scanf("%d \n %d \n %d \n %d \n %d", &m1,&m2,&m3,&m4,&m5);
     
-    /*Converting fahrenheit into centigrade*/
-    cent = (fr - 32)*5.0/9.0;
-    printf("Temperature in centigrade: %f", cent);
+    /*Claculating aggregate*/
+    agg = m1 +m2 + m3 + m4 + m5;
+    
+    /*Claculating percentage*/
+    percent = agg/5;
+    
+    printf("Aggregate Marks: %d \n", agg);
+    printf("Percentage Marks %f \n", percent);
     
     return 0;
+    
 }
